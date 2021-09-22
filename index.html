@@ -1,0 +1,52 @@
+<h1>Learn and explore the new world</h1>
+<h2>by Eunjin Lee</h2>
+
+<style>
+
+  @keyframes body-pulse {
+    
+
+  0%  {
+    background-color: #81c994;
+  }
+  50% {
+    background-color: #c76ebc;
+  }
+  100% {
+    background-color: #81c994;
+   }
+  }
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: body-pulse 5s infinite;  
+  }
+  
+  @keyframes circle-pulse {
+    0% {
+      background-color: #c76ebc;
+    }
+    50% {
+      background-color: #81c994;
+    }
+    100% {
+      background-color: #c76ebc;
+    }
+  }
+  
+  #circle {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    filter: blur(30px);
+    animation: circle-pulse 5s infinite;
+  }
+  
+</style>
+
+<body>
+  <div id="circle"></div>
+</body>
